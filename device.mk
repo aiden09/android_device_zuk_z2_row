@@ -14,13 +14,10 @@
 # limitations under the License.
 #
 
-# Inherit from msm8916-common
-$(call inherit-product, device/cyanogen/msm8916-common/msm8916.mk)
+# Inherit from msm8996-common
+$(call inherit-product, device/zuk/msm8996-common/msm8996.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Include package config fragments
-include $(LOCAL_PATH)/product/*.mk
-
-$(call inherit-product-if-exists, vendor/wileyfox/crackling/crackling-vendor.mk)
+$(call inherit-product-if-exists, vendor/zuk/z2_row/z2_row-vendor.mk)

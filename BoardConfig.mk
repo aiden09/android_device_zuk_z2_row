@@ -13,11 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/cyanogen/msm8916-common/BoardConfigCommon.mk
+include device/zuk/msm8996-common/BoardConfigCommon.mk
 
-include device/wileyfox/crackling/board/*.mk
-
-TARGET_BOARD_INFO_FILE := device/wileyfox/crackling/board-info.txt
+TARGET_BOARD_INFO_FILE := device/zuk/z2_row/board-info.txt
 
 # inherit from proprietary files
--include vendor/wileyfox/crackling/BoardConfigVendor.mk
+-include vendor/zuk/z2_row/BoardConfigVendor.mk
