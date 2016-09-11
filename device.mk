@@ -20,4 +20,21 @@ $(call inherit-product, device/zuk/msm8996-common/msm8996.mk)
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
+# Audio
+PRODUCT_COPY_FILES := \
+	device/zuk/z2_row/audio/QRD_Bluetooth_cal.acdb:system/etc/acdbdata/QRD_Bluetooth_cal.acdb \
+	device/zuk/z2_row/audio/QRD_General_cal.acdb:system/etc/acdbdata/QRD_General_cal.acdb \
+	device/zuk/z2_row/audio/QRD_Global_cal.acdb:system/etc/acdbdata/QRD_Global_cal.acdb \
+	device/zuk/z2_row/audio/QRD_Handset_cal.acdb:system/etc/acdbdata/QRD_Handset_cal.acdb \
+	device/zuk/z2_row/audio/QRD_Hdmi_cal.acdb:system/etc/acdbdata/QRD_Hdmi_cal.acdb \
+	device/zuk/z2_row/audio/QRD_Headset_cal.acdb:system/etc/acdbdata/QRD_Headset_cal.acdb \
+	device/zuk/z2_row/audio/QRD_Speaker_cal.acdb:system/etc/acdbdata/QRD_Speaker_cal.acdb
+
+# Keylayout
+PRODUCT_COPY_FILES := \
+	device/zuk/z2_row/keylayout/fpc1020.kl:system/usr/keylayout/acdbdata/fpc1020.kl \
+	device/zuk/z2_row/keylayout/gpio-keys.kl:system/usr/keylayout/acdbdata/gpio-keys.kl \
+	device/zuk/z2_row/keylayout/qpnp_pon.kl:system/usr/keylayout/acdbdata/qpnp_pon.kl \
+	device/zuk/z2_row/keylayout/synaptics.kl:system/usr/keylayout/acdbdata/synaptics.kl
+
 $(call inherit-product-if-exists, vendor/zuk/z2_row/z2_row-vendor.mk)

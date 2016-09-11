@@ -1,9 +1,9 @@
 [
   {
-    "repository": "android_device_cyanogen_msm8916-common",
-    "target_path": "device/cyanogen/msm8916-common"
+    "repository": "android_device_zuk_msm8996-common",
+    "target_path": "device/zuk/msm8996-common"
   },{
-    "repository": "android_kernel_cyanogen_msm8916",
-    "target_path": "kernel/cyanogen/msm8916"
+    "repository": "android_kernel_zuk_msm8996",
+    "target_path": "kernel/zuk/msm8996"
   }
 ]
