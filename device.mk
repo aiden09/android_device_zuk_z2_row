@@ -37,4 +37,11 @@ PRODUCT_COPY_FILES := \
 	device/zuk/z2_row/keylayout/qpnp_pon.kl:system/usr/keylayout/acdbdata/qpnp_pon.kl \
 	device/zuk/z2_row/keylayout/synaptics.kl:system/usr/keylayout/acdbdata/synaptics.kl
 
+# GPS
+PRODUCT_COPY_FILES := \
+	device/zuk/z2_row/gps/flp.conf:system/etc/flp.conf \
+	device/zuk/z2_row/gps/gps.conf:system/etc/gps.conf \
+	device/zuk/z2_row/gps/izat.conf:system/etc/izat.conf \
+	device/zuk/z2_row/gps/sap.conf:system/etc/sap.conf
+
 $(call inherit-product-if-exists, vendor/zuk/z2_row/z2_row-vendor.mk)
