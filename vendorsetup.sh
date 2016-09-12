@@ -1,0 +1,3 @@
+add_lunch_combo cm_z2_row-user
+add_lunch_combo cm_z2_row-userdebug
+add_lunch_combo cm_z2_row-eng
