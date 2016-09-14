@@ -15,8 +15,6 @@
 
 include device/zuk/msm8996-common/BoardConfigCommon.mk
 
-TARGET_BOARD_INFO_FILE := device/zuk/z2_row/board-info.txt
-
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_z2_row_defconfig
 TARGET_KERNEL_SOURCE := kernel/zuk/msm8996
