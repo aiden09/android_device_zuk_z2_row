@@ -44,4 +44,27 @@ PRODUCT_COPY_FILES := \
 	device/zuk/z2_row/gps/izat.conf:system/etc/izat.conf \
 	device/zuk/z2_row/gps/sap.conf:system/etc/sap.conf
 
+# Sensors
+PRODUCT_PACKAGES += \
+	sensors.msm8996
+
+# RIL
+PRODUCT_PACKAGES += \
+	librmnetctl \
+	libxml2 \
+	libprotobuf-cpp-full
+
+# Power
+PRODUCT_PACKAGES += \
+	power.msm8996
+
+# NFC
+PRODUCT_PACKAGES += \
+	com.android.nfc_extras \
+	com.nxp.nfc.nq \
+	nfc_nci.nqx.default \
+	NQNfcNci \
+	nqnfcee_access.xml \
+	Tag
+
 $(call inherit-product-if-exists, vendor/zuk/z2_row/z2_row-vendor.mk)
