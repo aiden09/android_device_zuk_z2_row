@@ -20,6 +20,7 @@ TARGET_BOARD_INFO_FILE := device/zuk/z2_row/board-info.txt
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_z2_row_defconfig
 TARGET_KERNEL_SOURCE := kernel/zuk/msm8996
+TARGET_KERNEL_APPEND_DTB := true
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
 
