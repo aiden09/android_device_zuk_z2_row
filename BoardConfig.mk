@@ -18,5 +18,7 @@ include device/zuk/msm8996-common/BoardConfigCommon.mk
 # Kernel
 TARGET_KERNEL_CONFIG := cyanogenmod_z2_row_defconfig
 
+TARGET_OTA_ASSERT_DEVICE := z2_row,z2pro,z2row,z2_pro,z2121
+
 # inherit from proprietary files
 -include vendor/zuk/z2_row/BoardConfigVendor.mk
